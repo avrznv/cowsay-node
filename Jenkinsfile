@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependecies') {
             steps {
                 dir('./code') {
-                sh 'npm install'
+                sh "/usr/bin/npm install"
                 }
             }
         }
